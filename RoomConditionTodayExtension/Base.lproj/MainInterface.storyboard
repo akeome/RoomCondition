@@ -86,7 +86,9 @@
                     <size key="freeformSize" width="320" height="110"/>
                     <connections>
                         <outlet property="co2Label" destination="bRq-uh-M21" id="kRb-qo-R3B"/>
+                        <outlet property="co2TitleLabel" destination="Qvn-bl-ar7" id="Mq1-v8-Fb8"/>
                         <outlet property="temperatureLabel" destination="cJg-Gl-sQf" id="j3r-Ag-82y"/>
+                        <outlet property="temperatureTitleLabel" destination="wAL-2z-NM1" id="Bs6-dF-nlW"/>
                         <outlet property="timestampLabel" destination="DY1-yu-FYm" id="ohd-KK-gzk"/>
                     </connections>
                 </viewController>
