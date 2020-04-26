@@ -10,7 +10,10 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+    
+    @IBOutlet private weak var temperatureLable: UILabel!
+    @IBOutlet private weak var co2Label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -22,6 +25,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
+        
         
         completionHandler(NCUpdateResult.newData)
     }

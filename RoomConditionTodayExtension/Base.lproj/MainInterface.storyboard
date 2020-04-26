@@ -70,6 +70,10 @@
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="110"/>
+                    <connections>
+                        <outlet property="co2Label" destination="bRq-uh-M21" id="kRb-qo-R3B"/>
+                        <outlet property="temperatureLable" destination="cJg-Gl-sQf" id="hmR-GK-bLo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
