@@ -33,11 +33,34 @@
                                                         <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJg-Gl-sQf">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fcI-FX-KEp">
                                                         <rect key="frame" x="0.0" y="16" width="144" height="70"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mL6-O2-zRh">
+                                                                <rect key="frame" x="46" y="31" width="8" height="8"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="8" id="62L-34-2u4"/>
+                                                                    <constraint firstAttribute="width" secondItem="mL6-O2-zRh" secondAttribute="height" multiplier="1:1" id="Fxo-jG-mka"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="4"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJg-Gl-sQf">
+                                                                <rect key="frame" x="64" y="14" width="16" height="42"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="cJg-Gl-sQf" firstAttribute="centerY" secondItem="fcI-FX-KEp" secondAttribute="centerY" id="3SB-Fk-AsJ"/>
+                                                            <constraint firstItem="mL6-O2-zRh" firstAttribute="centerY" secondItem="cJg-Gl-sQf" secondAttribute="centerY" id="LBS-cg-S4i"/>
+                                                            <constraint firstItem="cJg-Gl-sQf" firstAttribute="leading" secondItem="mL6-O2-zRh" secondAttribute="trailing" constant="10" id="QXb-eo-Mot"/>
+                                                            <constraint firstItem="cJg-Gl-sQf" firstAttribute="centerX" secondItem="fcI-FX-KEp" secondAttribute="centerX" id="cpF-WW-2RF"/>
+                                                        </constraints>
+                                                    </view>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="use-4C-2Um">
@@ -52,11 +75,34 @@
                                                         <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRq-uh-M21">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vkf-Lw-Ju8">
                                                         <rect key="frame" x="0.0" y="16" width="144" height="70"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRq-uh-M21">
+                                                                <rect key="frame" x="64" y="14" width="16" height="42"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37A-lS-o4o">
+                                                                <rect key="frame" x="46" y="31" width="8" height="8"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="8" id="BnU-lw-6f5"/>
+                                                                    <constraint firstAttribute="width" secondItem="37A-lS-o4o" secondAttribute="height" multiplier="1:1" id="Xta-0t-18A"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="4"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="bRq-uh-M21" firstAttribute="centerX" secondItem="Vkf-Lw-Ju8" secondAttribute="centerX" id="82Y-Qg-s0N"/>
+                                                            <constraint firstItem="bRq-uh-M21" firstAttribute="leading" secondItem="37A-lS-o4o" secondAttribute="trailing" constant="10" id="B1L-hn-VOA"/>
+                                                            <constraint firstItem="37A-lS-o4o" firstAttribute="centerY" secondItem="bRq-uh-M21" secondAttribute="centerY" id="cFw-Tk-nUP"/>
+                                                            <constraint firstItem="bRq-uh-M21" firstAttribute="centerY" secondItem="Vkf-Lw-Ju8" secondAttribute="centerY" id="h3p-Yf-jQT"/>
+                                                        </constraints>
+                                                    </view>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -85,8 +131,10 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="110"/>
                     <connections>
+                        <outlet property="co2Budge" destination="37A-lS-o4o" id="ULT-i8-L5l"/>
                         <outlet property="co2Label" destination="bRq-uh-M21" id="kRb-qo-R3B"/>
                         <outlet property="co2TitleLabel" destination="Qvn-bl-ar7" id="Mq1-v8-Fb8"/>
+                        <outlet property="temperatureBudge" destination="mL6-O2-zRh" id="4xM-Ih-Cvt"/>
                         <outlet property="temperatureLabel" destination="cJg-Gl-sQf" id="j3r-Ag-82y"/>
                         <outlet property="temperatureTitleLabel" destination="wAL-2z-NM1" id="Bs6-dF-nlW"/>
                         <outlet property="timestampLabel" destination="DY1-yu-FYm" id="ohd-KK-gzk"/>

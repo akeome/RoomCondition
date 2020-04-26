@@ -14,7 +14,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBOutlet private weak var temperatureTitleLabel: UILabel!
     @IBOutlet private weak var co2TitleLabel: UILabel!
+    @IBOutlet private weak var temperatureBudge: UIView!
     @IBOutlet private weak var temperatureLabel: UILabel!
+    @IBOutlet private weak var co2Budge: UIView!
     @IBOutlet private weak var co2Label: UILabel!
     @IBOutlet private weak var timestampLabel: UILabel!
     
@@ -42,9 +44,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             
             DispatchQueue.main.async {
                 self.temperatureLabel.text = roomCondition.temp
-                self.temperatureLabel.textColor = self.tempColor(tempValue: roomCondition.temp)
+                self.temperatureBudge.backgroundColor = self.tempColor(tempValue: roomCondition.temp)
                 self.co2Label.text = roomCondition.co2
-                self.co2Label.textColor = self.co2Color(co2Value: roomCondition.co2)
+                self.co2Budge.backgroundColor = self.co2Color(co2Value: roomCondition.co2)
                 self.timestampLabel.text = "取得日時: \(roomCondition.timestamp)"
 
                 completionHandler(NCUpdateResult.newData)
