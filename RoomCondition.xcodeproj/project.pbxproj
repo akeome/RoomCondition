@@ -16,7 +16,7 @@
 		B6E7544924548A0F0096AA00 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E7544824548A0F0096AA00 /* NotificationCenter.framework */; };
 		B6E7544C24548A0F0096AA00 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E7544B24548A0F0096AA00 /* TodayViewController.swift */; };
 		B6E7544F24548A0F0096AA00 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E7544D24548A0F0096AA00 /* MainInterface.storyboard */; };
-		B6E7545324548A0F0096AA00 /* RoomConditionTodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B6E7544624548A0F0096AA00 /* RoomConditionTodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B6E7545324548A0F0096AA00 /* お部屋の気持ち.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B6E7544624548A0F0096AA00 /* お部屋の気持ち.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B6E754612455409E0096AA00 /* APIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E7545F2455409E0096AA00 /* APIRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6E754642455409E0096AA00 /* APIRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E7545D2455409E0096AA00 /* APIRequest.framework */; };
 		B6E754652455409E0096AA00 /* APIRequest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6E7545D2455409E0096AA00 /* APIRequest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -48,7 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				B6E7545324548A0F0096AA00 /* RoomConditionTodayExtension.appex in Embed App Extensions */,
+				B6E7545324548A0F0096AA00 /* お部屋の気持ち.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,7 +75,7 @@
 		B6E75437245489420096AA00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E7543A245489420096AA00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6E7543C245489420096AA00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6E7544624548A0F0096AA00 /* RoomConditionTodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RoomConditionTodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E7544624548A0F0096AA00 /* お部屋の気持ち.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "お部屋の気持ち.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E7544824548A0F0096AA00 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		B6E7544B24548A0F0096AA00 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		B6E7544E24548A0F0096AA00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				B6E7542B2454893C0096AA00 /* RoomCondition.app */,
-				B6E7544624548A0F0096AA00 /* RoomConditionTodayExtension.appex */,
+				B6E7544624548A0F0096AA00 /* お部屋の気持ち.appex */,
 				B6E7545D2455409E0096AA00 /* APIRequest.framework */,
 			);
 			name = Products;
@@ -227,7 +227,7 @@
 			);
 			name = RoomConditionTodayExtension;
 			productName = RoomConditionTodayExtension;
-			productReference = B6E7544624548A0F0096AA00 /* RoomConditionTodayExtension.appex */;
+			productReference = B6E7544624548A0F0096AA00 /* お部屋の気持ち.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		B6E7545C2455409E0096AA00 /* APIRequest */ = {
@@ -553,7 +553,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.akeomestudio.RoomCondition.RoomConditionTodayExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "お部屋の気持ち";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -572,7 +572,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.akeomestudio.RoomCondition.RoomConditionTodayExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "お部屋の気持ち";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -582,6 +582,7 @@
 		B6E754672455409E0096AA00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -611,6 +612,7 @@
 		B6E754682455409E0096AA00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
