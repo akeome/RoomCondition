@@ -12,8 +12,9 @@ import APIRequest
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     
-    @IBOutlet private weak var temperatureLable: UILabel!
+    @IBOutlet private weak var temperatureLabel: UILabel!
     @IBOutlet private weak var co2Label: UILabel!
+    @IBOutlet private weak var timestampLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +35,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             }
             
             DispatchQueue.main.async {
-                self.temperatureLable.text = roomCondition.temp
+                self.temperatureLabel.text = roomCondition.temp
                 self.co2Label.text = roomCondition.co2
+                self.timestampLabel.text = "取得日時: \(roomCondition.timestamp)"
 
                 completionHandler(NCUpdateResult.newData)
             }
