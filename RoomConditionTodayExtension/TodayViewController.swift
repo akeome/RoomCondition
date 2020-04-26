@@ -8,6 +8,7 @@
 
 import UIKit
 import NotificationCenter
+import APIRequest
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     
@@ -26,8 +27,19 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
         
-        
-        completionHandler(NCUpdateResult.newData)
+        API.request(completion: { roomCondition in
+            guard let roomCondition = roomCondition else {
+                completionHandler(.failed)
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.temperatureLable.text = roomCondition.temp
+                self.co2Label.text = roomCondition.co2
+
+                completionHandler(NCUpdateResult.newData)
+            }
+        })
     }
     
 }
