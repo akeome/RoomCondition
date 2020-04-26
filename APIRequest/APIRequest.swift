@@ -8,15 +8,15 @@
 
 public struct API {
     
-    public static func request(completion: @escaping  (String) -> Void) {
-        // 文字数が1〜9文字の範囲でランダムに返ってくる
-        let url = "https://httpbin.org/range/\(Int.random(in: 1..<10))"
+    public static func request(completion: @escaping (RoomCondition?) -> Void) {
+        
+        let url = "http://192.168.100.50:1201/log.json"
         
         let session = URLSession.shared
         let task = session.dataTask(with: URL(string: url)!) { data, urlResponse, error in
             
-            let body = String(data: data!, encoding: .utf8)!
-            completion(body)
+            let currentCondition = try! JSONDecoder().decode([RoomCondition].self, from: data!)
+            completion(currentCondition.last)
         }
         
         task.resume()
