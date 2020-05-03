@@ -14,3 +14,4 @@ CO2-miniとco2meterで計測したCO2濃度をiOSウィジェットに表示す�
 - Paspberry Pi と [vfilimonov/co2meter: A Python library for USB CO2 meter](https://github.com/vfilimonov/co2meter) で計測結果にアクセスできるようにします
 
 詳細は以下からどうぞ
+https://qiita.com/akeome/items/997d2f2bd9aea538857e
